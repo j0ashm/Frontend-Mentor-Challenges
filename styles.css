@@ -26,3 +26,31 @@
 .logo {
 	padding: 7%;
 }
+
+.hero-content {
+	padding: auto;
+}
+
+.heading {
+	padding: 7%;
+	font-size: 4em;
+	font-weight: 300;
+	letter-spacing: 0.3em;
+	padding-bottom: 0.1rem;
+}
+
+.pink-highlight {
+	color: hsl(0, 36%, 70%)
+}
+
+.bold-text {
+	color: black;
+	font-weight: 600;
+}
+
+.info-text {
+	padding-top: 4%;
+	padding-left: 7%;
+	font-size: 16px;
+	color: hsl(0, 36%, 70%);
+}
