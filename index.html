@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src="app.js" defer></script>
 	<title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
@@ -61,13 +63,13 @@
 				Add your email below to stay up-to-date with announcements and our
 				launch deals.
 			</p>
-			<form action="#">
-				<input type="text" placeholder="Email Address" id="email" required>
-				<img src="resource/images/icon-error.svg" class="error-icon" alt="">
-				<button type="submit">
+			<form action="#" id="email-validation">
+				<input type="text" placeholder="Email Address" id="email" v-model="email" required>
+				<img v-show="error" src="resource/images/icon-error.svg" class="error-icon" alt="">
+				<button @submit.prevent="validateEmail" type="submit">
 					<img src="resource/images/icon-arrow.svg" alt="">
 				</button>
-				<p class="error-text">Please provide a valid email.</p>
+				<p v-show="error" class="error-text">Please provide a valid email.</p>
 			</form>
 		</div>
 		<div class="cover-image">

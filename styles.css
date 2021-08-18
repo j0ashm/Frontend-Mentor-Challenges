@@ -105,7 +105,6 @@ form {
 .error-text,
 .error-icon {
 	position: absolute;
-	visibility: hidden;
 }
 
 .error-icon {
